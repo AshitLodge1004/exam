@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portfolio</title>
+</head>
+<body>
+    <h1>My Student Portfolio</h1>
+
+    <button onclick="show('home')">Home</button>
+    <button onclick="show('about')">About</button>
+    <button onclick="show('skills')">Skills</button>
+    <button onclick="show('projects')">Projects</button>
+    <button onclick="show('education')">Education</button>
+
+    <div id="home">
+        <h2>Home</h2>
+        <input id="name" placeholder="Enter your name">
+        <button onclick="alert('Welcome '+document.getElementById('name').value)">Submit</button>
+    </div>
+
+    <div id="about" hidden>
+        <h2>About Me</h2>
+        <input placeholder="About yourself">
+    </div>
+
+    <div id="skills" hidden>
+        <h2>Skills</h2>
+        <input placeholder="Enter your skills">
+    </div>
+
+    <div id="projects" hidden>
+        <h2>Projects</h2>
+        <input placeholder="Enter your projects">
+    </div>
+
+    <div id="education" hidden>
+        <h2>Education</h2>
+        <input placeholder="Enter your qualification">
+    </div>
+
+    <script>
+        function show(id) {
+            document.querySelectorAll('div').forEach(x => x.hidden = true);
+            document.getElementById(id).hidden = false;
+        }
+    </script>
+</body>
+</html>
+```
