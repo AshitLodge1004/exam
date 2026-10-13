@@ -1,0 +1,40 @@
+```html
+<style>
+body {
+    font-family: Arial;
+    text-align: center;
+    background: lightblue;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+button {
+    background: navy;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: blue;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+
+div {
+    background: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+</style>
+```
